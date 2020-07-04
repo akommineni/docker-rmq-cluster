@@ -22,3 +22,12 @@
     
     `docker exec -it rabbit3 rabbitmqctl start_app`
 - By now all the nodes joined the cluster
+
+- Check the status of the cluster
+
+    `docker exec -ti rabbit1 rabbitmqctl cluster_status`
+
+- The admin user name and password is **guest/guest**
+
+- Reference to rabbitmqctl commands 
+https://rabbitmq.docs.pivotal.io/37/rabbit-web-docs/man/rabbitmqctl.1.man.html
